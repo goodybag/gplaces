@@ -132,8 +132,8 @@ The JS api has more functionality than available from the markup.
 
 The module exports a single function (the Gplaces Object Factory) with the following properties:
 
-* [`http( Function onRequest( input, callback ) )`](http) Connect the gplaces api to your proxy
-* [`proxy( [Object options] )`](proxy) returns an express request handler
+* [`http( Function onRequest( input, callback ) )`](#http) Connect the gplaces api to your proxy
+* [`proxy( [Object options] )`](#proxy) returns an express request handler
 
 __Gplaces Object Factory__
 
