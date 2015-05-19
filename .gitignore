@@ -2,3 +2,4 @@ node_modules/
 test/config.local.js
 test/public/dist/*
 .DS_Store
+npm-debug.log
