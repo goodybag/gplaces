@@ -12,7 +12,7 @@ app.options('/api/places', function( req, res ){
 });
 
 app.get('/api/places'
-, require('../lib/server')({
+, require('../').proxy({
     key: config.key
   })
 );

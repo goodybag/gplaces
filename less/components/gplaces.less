@@ -14,6 +14,10 @@
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.25 );
   font-size: 13px;
 
+  .error {
+    padding: 12px;
+  }
+
   .gplaces-popover-item {
     display: block;
     cursor: pointer;
@@ -92,6 +96,7 @@
       display: inherit;
       opacity: 0;
       transform: rotateX(100deg) skewX(10deg) translate(-0, -10px) scaleX(0.5);
+      pointer-events: none;
 
       // IE8
       display: none\9;
