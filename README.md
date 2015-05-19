@@ -2,6 +2,8 @@
 
 > Dependency-free, google maps auto completion input
 
+![http://storage.j0.hn/gplaces.gif](http://storage.j0.hn/gplaces.gif)
+
 __install__
 
 ```
