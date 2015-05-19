@@ -1,6 +1,6 @@
 {
   "name": "gplaces",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dependency-free, google maps auto completion input",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,6 @@
     "type": "git",
     "url": "https://github.com/goodybag/gplaces"
   },
-
   "bugs": {
     "url": "https://github.com/goodybag/gplaces/issues"
   },
