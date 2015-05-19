@@ -1,6 +1,6 @@
 var gplaces = require('../../../');
 var $       = require('jquery');
-var request = require('superagent');
+// var request = require('superagent');
 var config  = require('../../config');
 
 gplaces.http( function( input, callback ){

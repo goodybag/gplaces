@@ -4,19 +4,19 @@ module.exports.http   = require('./lib/http');
 
 if ( 'document' in global ){
   document.addEventListener('DOMContentLoaded', function(){
-    Array.prototype.slice
-      .call( document.querySelectorAll('[data-gplaces]') )
-      .map( function( el ){
-        var options = {};
+    var list = document.querySelectorAll('[data-gplaces]');
 
-        options.target = document
-          .querySelector( el.getAttribute('data-target') );
+    for ( var i = 0, el, options, target; i < list.length; i++ ){
+      el = list[ i ];
+      options = {};
 
-        if ( !options.target ){
-          delete options.target;
-        }
+      target = el.getAttribute('data-target');
 
-        return module.exports( el, options );
-      });
+      if ( target ){
+        options.target = document.querySelector( target );
+      }
+
+      module.exports( el, options );
+    }
   });
 }

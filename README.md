@@ -22,6 +22,8 @@ After importing the script, setting up your proxy, and setting `gplaces.http`, y
 <textarea data-gplaces></textarea>
 ```
 
+Also, see [browser support](#browser-support).
+
 ## Detailed Usage guide
 
 There are two main hurdles to getting this to work:
@@ -240,6 +242,17 @@ require('gplaces').http( function( input, callback ){
   .error( callback )
 });
 ```
+
+## Browser Support
+
+IE8+ (IE8 with polyfills) and all major browsers
+
+### Polyfills for IE8
+
+* https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js
+* https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-shim.js
+* https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-sham.js
+* http://storage.j0.hn/events-polyfill.js
 
 ## FAQs
 
