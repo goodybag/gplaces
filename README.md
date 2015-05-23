@@ -235,11 +235,9 @@ If you have not implement an http callback, then gplaces will throw an error if 
 
 ```javascript
 require('gplaces').http( function( input, callback ){
-  $.ajax({
-
-  })
-  .success( callback.bind( null, null ) )
-  .error( callback )
+  $.getJSON( '/api/places?input=' + input )
+    .error( callback )
+    .success( callback.bind( null, null ) );
 });
 ```
 
