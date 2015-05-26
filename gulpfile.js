@@ -19,7 +19,7 @@ gulp.task( 'build-dist', ['lint', 'clear-dist-dir'], function(){
   return require('browserify')({
       debug: true
     })
-    .add('./index.js')
+    .add('./standalone-build.js')
     .bundle()
     .pipe( fs.createWriteStream('./dist/gplaces.js') );
 });
