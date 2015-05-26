@@ -1,6 +1,6 @@
 {
   "name": "gplaces",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Dependency-free, google maps auto completion input",
   "main": "index.js",
   "scripts": {
