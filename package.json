@@ -34,8 +34,5 @@
   },
   "browser": {
     "./lib/server.js": "./lib/noop.js"
-  },
-  "server": {
-    "./lib/register-browser-content.js": "./lib/noop.js"
   }
 }
