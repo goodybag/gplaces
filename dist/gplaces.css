@@ -1,0 +1,101 @@
+.gplaces-popover {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  color: #555;
+  background: #fff;
+}
+.gplaces-popover.hide {
+  display: none;
+}
+.gplaces-popover .error {
+  padding: 12px;
+}
+.gplaces-popover .gplaces-popover-item {
+  display: block;
+  cursor: pointer;
+  padding: 6px 24px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.gplaces-popover .gplaces-popover-item:last-child {
+  border: none;
+}
+.gplaces-popover .highlight {
+  font-weight: 700;
+}
+.gplaces-popover .google-logo {
+  padding: 6px 12px;
+  margin-bottom: -2px;
+  text-align: right;
+}
+.gplaces-popover .google-logo:after {
+  content: "";
+  display: inline-block;
+  width: 104px;
+  height: 16px;
+  background: url('//maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png');
+}
+.gplaces-popover .gplaces-popover-item {
+  border-color: rgba(85, 85, 85, 0.1);
+}
+.gplaces-popover .gplaces-popover-item.active,
+.gplaces-popover .gplaces-popover-item:hover {
+  background-color: rgba(85, 85, 85, 0.03);
+}
+.gplaces-popover .highlight {
+  color: #333;
+}
+.gplaces-popover.dark {
+  color: #e6e9ed;
+  background: #434A53;
+}
+.gplaces-popover.dark .gplaces-popover-item {
+  border-color: rgba(230, 233, 237, 0.1);
+}
+.gplaces-popover.dark .gplaces-popover-item.active,
+.gplaces-popover.dark .gplaces-popover-item:hover {
+  background-color: rgba(230, 233, 237, 0.03);
+}
+.gplaces-popover.dark .highlight {
+  color: #fff;
+}
+.gplaces-popover.dark .google-logo:after {
+  background: url('https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-non-white2.png');
+}
+.gplaces-popover.bouncy {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.23, 1.52, 0.82, 1.07), opacity 0.12s linear;
+          transition: transform 200ms cubic-bezier(0.23, 1.52, 0.82, 1.07), opacity 0.12s linear;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.gplaces-popover.bouncy.hide {
+  display: inherit;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: none\9;
+}
+.gplaces-popover.flip {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.65, 0.22, 0.36, 1), opacity 0.2s cubic-bezier(0.01, 0.98, 1, 1);
+          transition: transform 0.3s cubic-bezier(0.65, 0.22, 0.36, 1), opacity 0.2s cubic-bezier(0.01, 0.98, 1, 1);
+  opacity: 1;
+  -webkit-transform: rotateX(0) skewX(0) translate(0) scaleX(1);
+          transform: rotateX(0) skewX(0) translate(0) scaleX(1);
+  -webkit-transform-origin: 0% 0;
+          transform-origin: 0% 0;
+}
+.gplaces-popover.flip.hide {
+  display: inherit;
+  opacity: 0;
+  -webkit-transform: rotateX(100deg) skewX(10deg) translate(0, -10px) scaleX(0.5);
+          transform: rotateX(100deg) skewX(10deg) translate(0, -10px) scaleX(0.5);
+  pointer-events: none;
+  display: none\9;
+}
